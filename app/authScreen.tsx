@@ -2,7 +2,7 @@ import React from 'react';
 import * as WebBrowser from 'expo-web-browser';
 import { Text, View, Button, Platform } from 'react-native';
 import { Link } from 'expo-router';
-import { useOAuth } from '@clerk/clerk-expo';
+import { useOAuth, useAuth } from '@clerk/clerk-expo';  // <-- import useAuth here
 import * as Linking from 'expo-linking';
 
 export const useWarmUpBrowser = () => {
@@ -21,12 +21,23 @@ WebBrowser.maybeCompleteAuthSession();
 export default function Page() {
   useWarmUpBrowser();
 
+  const { signOut } = useAuth();  // <-- get signOut function
+
+  React.useEffect(() => {
+    // Sign out on mount to force login every time
+    signOut().catch(() => {
+      // handle error or ignore if already signed out
+    });
+  }, []);
+
   const { startOAuthFlow } = useOAuth({ strategy: 'oauth_google' });
 
   const onPress = React.useCallback(async () => {
     try {
-      const { createdSessionId, signIn, signUp, setActive } = await startOAuthFlow({
+      const { createdSessionId, setActive } = await startOAuthFlow({
         redirectUrl: Linking.createURL('/dashboard', { scheme: 'myapp' }),
+        // Optionally try passing prompt param if supported:
+        // strategyOptions: { prompt: 'login' },
       });
 
       if (createdSessionId) {
