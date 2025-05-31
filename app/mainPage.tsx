@@ -20,7 +20,7 @@ const MainPage = () => {
       <StatusBar barStyle="dark-content" />
 
 
-      
+
 
       {/* Header */}
       <View style={styles.header}>
@@ -136,6 +136,16 @@ const MainPage = () => {
             <Ionicons name="play" size={24} color="white" />
           </LinearGradient>
         </TouchableOpacity>
+
+
+        <TouchableOpacity style={styles.navButton} onPress={() => router.push('/optionsScreen')}>
+          <Ionicons name="settings-outline" size={22} color="#6B7280" />
+          <Text style={styles.navText}>Settings</Text>
+        </TouchableOpacity>
+
+
+
+
 
         {
           <TouchableOpacity style={styles.navButton} onPress={() => router.push('/')}>
