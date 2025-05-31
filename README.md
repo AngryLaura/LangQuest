@@ -117,22 +117,3 @@ Push ir sukurk Pull Request
 📷 Instagram: @langquestgame
 
 📄 Licencija
-
-Šis projektas yra atviro kodo (MIT licencija).
-Naudok, dalinkis, kurk savo versiją!
-
-🏁 Pabaigai
-Ačiū, kad pasirinkai Lang Quest!
-Tavo anglų kalbos kelionė prasideda čia. 🌍🇬🇧
-
-„Kalbos – tai raktai į pasaulį. O dabar – žaisk, mokykis ir tobulėk!“
-
----
-
-Jei nori, galiu dar:
-
-- Sugeneruoti ikoną `.png` ar `.svg` formatu
-- Parašyti `package.json` turinį
-- Sukurti pirmus žodžių duomenis JSON formatu
-
-Nori ką nors iš to?
