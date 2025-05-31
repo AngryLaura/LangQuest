@@ -3,7 +3,7 @@
     "name": "LangQuest",
     "slug": "LangQuest",
     "version": "1.0.0",
-    "scheme": "LangQuest",
+    "scheme": "langquest",
     "web": {
       "bundler": "metro",
       "output": "static",
@@ -36,6 +36,9 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.anonymous.LangQuest"
+    },
+    "extra": {
+      "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_c2hhcnAtdGVybWl0ZS05NC5jbGVyay5hY2NvdW50cy5kZXYk"
     }
   }
 }

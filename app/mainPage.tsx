@@ -19,9 +19,6 @@ const MainPage = () => {
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="dark-content" />
 
-
-
-
       {/* Header */}
       <View style={styles.header}>
         <View style={styles.titleRow}>
@@ -49,9 +46,9 @@ const MainPage = () => {
         </View>
       </View>
 
-
-
-
+      {/* Main Content */}
+      <View style={styles.content}>
+        {/* Welcome Card */}
         <LinearGradient
           colors={['#4F46E5', '#6366F1']}
           start={{ x: 0, y: 0 }}
@@ -118,6 +115,12 @@ const MainPage = () => {
           </TouchableOpacity>
         </View>
 
+        {/* Legal Section */}
+        <TouchableOpacity style={styles.legalButton} onPress={() => router.push('/eulaScreen')}>
+          <AntDesign name="infocirlceo" size={14} color="#6B7280" />
+          <Text style={styles.legalText}>Terms of Service</Text>
+        </TouchableOpacity>
+      </View>
 
       {/* Navigation Bar */}
       <View style={styles.navBar}>
@@ -137,16 +140,6 @@ const MainPage = () => {
           </LinearGradient>
         </TouchableOpacity>
 
-
-        <TouchableOpacity style={styles.navButton} onPress={() => router.push('/optionsScreen')}>
-          <Ionicons name="settings-outline" size={22} color="#6B7280" />
-          <Text style={styles.navText}>Settings</Text>
-        </TouchableOpacity>
-
-
-
-
-
         {
           <TouchableOpacity style={styles.navButton} onPress={() => router.push('/')}>
             <Ionicons name="stats-chart-outline" size={22} color="#6B7280" />
@@ -154,6 +147,10 @@ const MainPage = () => {
           </TouchableOpacity>
         }
 
+        <TouchableOpacity style={styles.navButton} onPress={() => router.push('/optionsScreen')}>
+          <Ionicons name="settings-outline" size={22} color="#6B7280" />
+          <Text style={styles.navText}>Settings</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );

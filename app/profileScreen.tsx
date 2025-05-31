@@ -32,7 +32,7 @@ const [username, setUsername] = useState(user?.firstName || '');
       <View style={styles.headerContainer}>
         <Image
           source={{
-            uri: 'https://www.freepik.com/premium-photo/photographer-tourist-traveler-standing-green-top-mountain_22196158.htm#fromView=keyword&page=1&position=37&uuid=944511e5-fb0a-4a66-91ca-999358df4b6f&query=Img',
+            uri: 'https://www.freepik.com/free-photo/man-sits-end-trolltunga-before-mountains_1275204.htm#fromView=keyword&page=1&position=48&uuid=4c40b122-c9f8-47c3-b936-b6ad5f59522c&query=Img',
           }}
           style={styles.backgroundImage}
         />
@@ -65,7 +65,7 @@ const [username, setUsername] = useState(user?.firstName || '');
           <View style={styles.avatarContainer}>
             <Image
               source={{
-                uri: 'https://img.freepik.com/premium-vector/unique-avatars-icon-eps-file-download_1127397-4.jpg?w=740',
+                uri: 'https://www.freepik.com/free-vector/shot-concept-illustration_17344289.htm#fromView=keyword&page=1&position=47&uuid=08e92371-1d25-4a09-ace9-90ffdaf58ead&query=Img',
               }}
               style={styles.avatar}
             />

@@ -40,6 +40,7 @@ export default function Page() {
         redirectUrl: AuthSession.makeRedirectUri({ path: '/mainPage', scheme: 'myapp' }),
       });
 
+      
       if (createdSessionId) {
         setActive!({ session: createdSessionId });
       } else {
@@ -48,6 +49,8 @@ export default function Page() {
       console.error(JSON.stringify(err, null, 2));
     }
   }, []);
+
+  
 
   console.log(user);
 
