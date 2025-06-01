@@ -1,23 +1,19 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import { useAuth, useUser } from '@clerk/clerk-expo'
-import { Redirect,useRouter } from 'expo-router';
+import { Redirect, useRouter } from 'expo-router';
+import { useAuth, useUser } from '@clerk/clerk-expo';
+import { Text } from 'react-native';
 
-const router = useRouter();
+export default function Index() {
+  const router = useRouter();
+  const { isLoaded, isSignedIn } = useAuth();
 
-const index = () => {
- const {isSignedIn, isLoaded } = useAuth();
- const { user } = useUser();
+  const { user } = useUser();
 
- if(!isLoaded) {
+  if (!isLoaded) {
     return <Text>Loading...</Text>;
- }
-
-if (isSignedIn) {
-return <Redirect href={'/gameScreen'} />;
-} else {
-return <Redirect href={'/authScreen'} />;
+  }
+  if (isSignedIn) {
+    return <Redirect href={'/mainPage'} />;
+  } else {
+    return <Redirect href={'/sign-in'} />;
+  }
 }
-};
-
-export default index

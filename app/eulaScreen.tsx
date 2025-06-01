@@ -5,28 +5,35 @@ import { useRouter } from 'expo-router';
 const eulaScreen = () => {
   const router = useRouter();
 
+  
   return (
     <View style={styles.container}>
       <Text style={styles.title}>End User License Agreement (EULA)</Text>
       <ScrollView style={styles.eulaText}>
-        {/* Ensure the content is inside the Text component */}
         <Text style={styles.eulaContent}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
-          dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
-          Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+          👋 Welcome, brave user!
           {'\n\n'}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
-          dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
-          Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+          By continuing to use this app, you solemnly swear (or maybe just tap agree) to the following totally legit and not at all suspicious terms:
           {'\n\n'}
+          🔹 You agree not to hold us responsible if you fall in love with the UI.
+          {'\n\n'}
+          🔹 You promise not to use this app to summon ancient beings or your ex.
+          {'\n\n'}
+          🔹 If this app causes uncontrollable joy, you agree to dance it out.
+          {'\n\n'}
+          🔹 You understand that pressing buttons is a serious commitment.
+          {'\n\n'}
+          🔹 Your soul may or may not be collateral. (Just kidding... unless?)
+          {'\n\n'}
+          Thank you for skimming this. We both know you didn’t read it all.
         </Text>
       </ScrollView>
 
       <TouchableOpacity
         style={styles.backButton}
-        onPress={() => router.push('/')} // Navigate back to the Home screen
+        onPress={() => router.push('/')}
       >
-        <Text style={styles.buttonText}>Back to Home</Text>
+        <Text style={styles.buttonText}>WHAT?!?!?!</Text>
       </TouchableOpacity>
     </View>
   );

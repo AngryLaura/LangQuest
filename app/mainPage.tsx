@@ -56,13 +56,13 @@ const MainPage = () => {
           style={styles.welcomeCard}>
           <View style={styles.welcomeContent}>
             <Text style={styles.welcomeTitle}>Continue Learning</Text>
-            <Text style={styles.welcomeSubtitle}>You're on a 3-day streak!</Text>
+            <Text style={styles.welcomeSubtitle}>You're on a 69day streak but you still suck!</Text>
 
             <View style={styles.progressContainer}>
               <View style={styles.progressBar}>
                 <View style={styles.progressFill} />
               </View>
-              <Text style={styles.progressText}>72% to next level</Text>
+              <Text style={styles.progressText}>69% to next level</Text>
             </View>
 
             <TouchableOpacity
@@ -86,32 +86,32 @@ const MainPage = () => {
             <View style={[styles.actionIcon, { backgroundColor: '#EEF2FF' }]}>
               <MaterialCommunityIcons name="book-open-variant" size={22} color="#4F46E5" />
             </View>
-            <Text style={styles.actionTitle}>Practice</Text>
-            <Text style={styles.actionSubtitle}>Daily exercises</Text>
+            <Text style={styles.actionTitle}>Do Nothing`</Text>
+            <Text style={styles.actionSubtitle}>This does nothing</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.actionCard} onPress={() => router.push('/')}>
             <View style={[styles.actionIcon, { backgroundColor: '#FEF3C7' }]}>
               <MaterialCommunityIcons name="trophy-outline" size={22} color="#D97706" />
             </View>
-            <Text style={styles.actionTitle}>Challenge</Text>
-            <Text style={styles.actionSubtitle}>Test your skills</Text>
+            <Text style={styles.actionTitle}>Do Nothing</Text>
+            <Text style={styles.actionSubtitle}>This does nothing</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.actionCard} onPress={() => router.push('/')}>
             <View style={[styles.actionIcon, { backgroundColor: '#ECFDF5' }]}>
               <MaterialCommunityIcons name="text-box-outline" size={22} color="#059669" />
             </View>
-            <Text style={styles.actionTitle}>Vocabulary</Text>
-            <Text style={styles.actionSubtitle}>Word library</Text>
+            <Text style={styles.actionTitle}>Do Nothing</Text>
+            <Text style={styles.actionSubtitle}>This does nothing</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.actionCard} onPress={() => router.push('/')}>
             <View style={[styles.actionIcon, { backgroundColor: '#FDF2F8' }]}>
               <MaterialCommunityIcons name="account-group-outline" size={22} color="#DB2777" />
             </View>
-            <Text style={styles.actionTitle}>Community</Text>
-            <Text style={styles.actionSubtitle}>Learn together</Text>
+            <Text style={styles.actionTitle}>Do Nothing</Text>
+            <Text style={styles.actionSubtitle}>This does nothing</Text>
           </TouchableOpacity>
         </View>
 
@@ -129,23 +129,11 @@ const MainPage = () => {
           <Text style={styles.activeNavText}>Home</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.navButton} onPress={() => router.push('/')}>
-          <Ionicons name="compass-outline" size={22} color="#6B7280" />
-          <Text style={styles.navText}>Discover</Text>
-        </TouchableOpacity>
-
         <TouchableOpacity style={styles.navCenterButton} onPress={() => router.push('/gameScreen')}>
           <LinearGradient colors={['#4F46E5', '#6366F1']} style={styles.navCenterButtonGradient}>
             <Ionicons name="play" size={24} color="white" />
           </LinearGradient>
         </TouchableOpacity>
-
-        {
-          <TouchableOpacity style={styles.navButton} onPress={() => router.push('/')}>
-            <Ionicons name="stats-chart-outline" size={22} color="#6B7280" />
-            <Text style={styles.navText}>Stats</Text>
-          </TouchableOpacity>
-        }
 
         <TouchableOpacity style={styles.navButton} onPress={() => router.push('/optionsScreen')}>
           <Ionicons name="settings-outline" size={22} color="#6B7280" />

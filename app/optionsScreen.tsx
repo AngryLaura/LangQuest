@@ -21,15 +21,16 @@ const OptionsScreen = () => {
   const [dailyReminders, setDailyReminders] = useState(true);
 
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="dark-content" />
+  <SafeAreaView style={[styles.container, darkMode && styles.containerDark]}>
+    
+      <StatusBar barStyle={darkMode ? 'light-content' : 'dark-content'} />
 
       {/* Header */}
       <View style={styles.header}>
         <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
           <Ionicons name="chevron-back" size={24} color="#111827" />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Settings</Text>
+        <Text style={[styles.headerTitle, darkMode && styles.textDark]}>Settings</Text>
         <View style={styles.headerRight} />
       </View>
 
@@ -92,9 +93,11 @@ const OptionsScreen = () => {
               <Text style={styles.settingSubtitle}>You will not get anything important</Text>
             </View>
             <Switch
-              trackColor={{ false: '#E5E7EB', true: '#C7D2FE' }}
-              thumbColor={notifications ? '#4F46E5' : '#F9FAFB'}
-              ios_backgroundColor="#E5E7EB"
+              trackColor={{
+  false: darkMode ? '#374151' : '#E5E7EB',
+  true: '#C7D2FE',
+}}
+ios_backgroundColor={darkMode ? '#374151' : '#E5E7EB'}
               onValueChange={() => setNotifications(!notifications)}
               value={notifications}
             />
@@ -120,29 +123,6 @@ const OptionsScreen = () => {
               ios_backgroundColor="#E5E7EB"
               onValueChange={() => setDarkMode(!darkMode)}
               value={darkMode}
-            />
-          </View>
-
-          <View style={styles.settingItem}>
-            <View style={styles.settingIconContainer}>
-              <LinearGradient
-                colors={['#DB2777', '#EC4899']}
-                style={styles.settingIcon}
-                start={{ x: 0, y: 0 }}
-                end={{ x: 1, y: 1 }}>
-                <Ionicons name="volume-high-outline" size={18} color="#FFF" />
-              </LinearGradient>
-            </View>
-            <View style={styles.settingTextContainer}>
-              <Text style={styles.settingTitle}>Sound Effects</Text>
-              <Text style={styles.settingSubtitle}>Hear feedback when you complete tasks</Text>
-            </View>
-            <Switch
-              trackColor={{ false: '#E5E7EB', true: '#C7D2FE' }}
-              thumbColor={soundEffects ? '#4F46E5' : '#F9FAFB'}
-              ios_backgroundColor="#E5E7EB"
-              onValueChange={() => setSoundEffects(!soundEffects)}
-              value={soundEffects}
             />
           </View>
 
@@ -266,6 +246,7 @@ const OptionsScreen = () => {
   );
 };
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -367,6 +348,12 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: '#9CA3AF',
     marginBottom: 24,
+  },
+    containerDark: {
+    backgroundColor: '#1F2937',
+  },
+  textDark: {
+    color: '#F9FAFB',
   },
 });
 

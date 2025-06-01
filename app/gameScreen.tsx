@@ -39,7 +39,7 @@ export default function GameScreen() {
   };
 
   const restart = () => {
-    setLives(5);
+    setLives(3);
     setCurrentQuestionIndex(0);
   };
 
