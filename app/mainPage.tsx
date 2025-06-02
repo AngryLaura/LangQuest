@@ -147,7 +147,7 @@ const MainPage = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: '#A8FFB0',
   },
   header: {
     paddingHorizontal: 20,

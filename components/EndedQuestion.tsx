@@ -23,7 +23,7 @@ const EndedQuestion = ({ question, onCorrectAnswer, onWrongAnswer }: EndedQuesti
         <View className="m-2 mb-0 flex flex-row items-center self-stretch">
           <Image
             source={{
-              uri: 'https://res.cloudinary.com/dis6tbci7/image/upload/v1738675454/Boy_qcbv19.png',
+              uri: 'https://i.pinimg.com/736x/ba/12/b6/ba12b65f00c2d43f6431d448db399010.jpg',
             }}
             style={{ width: 100, height: 133, marginRight: 8 }}
             resizeMode="contain"
@@ -38,12 +38,12 @@ const EndedQuestion = ({ question, onCorrectAnswer, onWrongAnswer }: EndedQuesti
           value={input}
           onChangeText={(changedText) => setInput(changedText)}
           className="text-md mb-2 flex-1 self-stretch rounded-lg border border-gray-300 bg-gray-200 p-2"
-          placeholder="Įveskite lietuvių kalba"
+          placeholder="Įveskite lietuvių kalba: TIKTAI ČIA IR SU GRAMATIKA"
           textAlignVertical="top"
           multiline={true}
         />
 
-        <CustomButton text="Patvirtinti" onPress={onButtonPress} disabled={!input} />
+        <CustomButton text="TOLIAU" onPress={onButtonPress} disabled={!input} />
       </KeyboardAvoidingView>
     </>
   );
