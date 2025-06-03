@@ -1,15 +1,16 @@
 export default {
-    question: 'Kur yra "stiklinė"?',
+    question: "Kur yra 'Liūtas?",
     options: [
       {
         id: 'option1',
         image: 'https://i.pinimg.com/736x/fe/ab/55/feab553adf0eda8ebb5e9ac63407e117.jpg',
         text: 'the pumba',
+        correct: true,
       },
       {
         id: 'option2',
         image: 'https://i.pinimg.com/736x/9a/91/c5/9a91c53e66c1fb81c996f0d8b1c3132f.jpg',
-        text: 'the puma',
+        text: 'the lion',
         correct: true,
       },
       {
@@ -20,7 +21,7 @@ export default {
       {
         id: 'option4',
         image: 'https://i.pinimg.com/736x/b3/dd/92/b3dd92d6db84a0d98a86d797f27c1eea.jpg',
-        text: 'the dude juse has armor',
+        text: 'the dude just has armor',
       },
     ],
   };

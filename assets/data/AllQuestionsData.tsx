@@ -5,7 +5,7 @@ const questions: QuizQuestion[] = [
   {
     id: 'q1',
     type: 'MULTIPLE_CHOICE',
-    text: "Kur yra 'Puma'?",
+    text: "Kur yra 'Liūtas?",
     options: [
       {
         id: 'option1',
@@ -16,7 +16,7 @@ const questions: QuizQuestion[] = [
       {
         id: 'option2',
         image: 'https://i.pinimg.com/736x/9a/91/c5/9a91c53e66c1fb81c996f0d8b1c3132f.jpg',
-        text: 'the puma',
+        text: 'the lion',
         correct: true,
       },
       {

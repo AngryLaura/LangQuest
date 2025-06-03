@@ -2,19 +2,19 @@ export default [
   {
     id: 'q1',
     type: 'OPEN_ENDED',
-    text: 'I am a student',
-    answer: 'As esu studentas',
+    text: 'I hate learning',
+    answer: 'Aš nekenčiu mokytis',
   },
   {
     id: 'q2',
     type: 'OPEN_ENDED',
-    text: 'The car is red',
-    answer: 'Masina yra raudona',
+    text: 'Batonas',
+    answer: 'Bread',
   },
   {
     id: 'q3',
     type: 'OPEN_ENDED',
-    text: 'I enjoy learning laguages',
-    answer: 'Man patinka mokytis kalbu',
+    text: 'I love bread',
+    answer: 'Aš myliu duona',
   },
 ];

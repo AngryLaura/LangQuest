@@ -12,6 +12,7 @@ import { useRouter } from 'expo-router';
 import { AntDesign, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 
+
 const MainPage = () => {
   const router = useRouter();
 
@@ -147,7 +148,7 @@ const MainPage = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#A8FFB0',
+    backgroundColor: '#F2C94C',
   },
   header: {
     paddingHorizontal: 20,
