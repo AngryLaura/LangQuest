@@ -28,7 +28,7 @@ const OptionsScreen = () => {
       {/* Header */}
       <View style={styles.header}>
         <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
-          <Ionicons name="chevron-back" size={24} color="#111827" />
+          <Ionicons name="chevron-back" size={24} color="#FACC15" />
         </TouchableOpacity>
         <Text style={[styles.headerTitle, darkMode && styles.textDark]}>Settings</Text>
         <View style={styles.headerRight} />

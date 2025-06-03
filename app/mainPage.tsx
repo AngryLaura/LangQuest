@@ -25,7 +25,7 @@ const MainPage = () => {
         <View style={styles.titleRow}>
           <View style={styles.logoContainer}>
             <LinearGradient
-              colors={['#6366F1', '#8B5CF6']}
+              colors={['#FACC15', '#FACC15']}
               style={styles.logoBackground}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 1 }}>
@@ -37,11 +37,11 @@ const MainPage = () => {
             style={styles.profileButton}
             onPress={() => router.push('/profileScreen')}>
             <LinearGradient
-              colors={['#EEF2FF', '#E0E7FF']}
+              colors={['#FACC15', '#FACC15']}
               style={styles.profileGradient}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 1 }}>
-              <AntDesign name="user" size={18} color="#4F46E5" />
+              <AntDesign name="user" size={18} color="#FACC15" />
             </LinearGradient>
           </TouchableOpacity>
         </View>
@@ -51,7 +51,7 @@ const MainPage = () => {
       <View style={styles.content}>
         {/* Welcome Card */}
         <LinearGradient
-          colors={['#4F46E5', '#6366F1']}
+           colors={['#FDE047', '#FACC15']}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 1 }}
           style={styles.welcomeCard}>
@@ -70,7 +70,7 @@ const MainPage = () => {
               style={styles.continueButton}
               onPress={() => router.push('/gameScreen')}>
               <Text style={styles.continueButtonText}>Continue</Text>
-              <Ionicons name="arrow-forward" size={16} color="#4F46E5" />
+              <Ionicons name="arrow-forward" size={16} color="#FACC15" />
             </TouchableOpacity>
           </View>
 
@@ -85,7 +85,7 @@ const MainPage = () => {
         <View style={styles.actionsGrid}>
           <TouchableOpacity style={styles.actionCard} onPress={() => router.push('/')}>
             <View style={[styles.actionIcon, { backgroundColor: '#EEF2FF' }]}>
-              <MaterialCommunityIcons name="book-open-variant" size={22} color="#4F46E5" />
+              <MaterialCommunityIcons name="book-open-variant" size={22} color="#FACC15" />
             </View>
             <Text style={styles.actionTitle}>Do Nothing`</Text>
             <Text style={styles.actionSubtitle}>This does nothing</Text>
@@ -93,7 +93,7 @@ const MainPage = () => {
 
           <TouchableOpacity style={styles.actionCard} onPress={() => router.push('/')}>
             <View style={[styles.actionIcon, { backgroundColor: '#FEF3C7' }]}>
-              <MaterialCommunityIcons name="trophy-outline" size={22} color="#D97706" />
+              <MaterialCommunityIcons name="trophy-outline" size={22} color="#FACC15" />
             </View>
             <Text style={styles.actionTitle}>Do Nothing</Text>
             <Text style={styles.actionSubtitle}>This does nothing</Text>
@@ -101,7 +101,7 @@ const MainPage = () => {
 
           <TouchableOpacity style={styles.actionCard} onPress={() => router.push('/')}>
             <View style={[styles.actionIcon, { backgroundColor: '#ECFDF5' }]}>
-              <MaterialCommunityIcons name="text-box-outline" size={22} color="#059669" />
+              <MaterialCommunityIcons name="text-box-outline" size={22} color="#FACC15" />
             </View>
             <Text style={styles.actionTitle}>Do Nothing</Text>
             <Text style={styles.actionSubtitle}>This does nothing</Text>
@@ -109,7 +109,7 @@ const MainPage = () => {
 
           <TouchableOpacity style={styles.actionCard} onPress={() => router.push('/')}>
             <View style={[styles.actionIcon, { backgroundColor: '#FDF2F8' }]}>
-              <MaterialCommunityIcons name="account-group-outline" size={22} color="#DB2777" />
+              <MaterialCommunityIcons name="account-group-outline" size={22} color="#FACC15" />
             </View>
             <Text style={styles.actionTitle}>Do Nothing</Text>
             <Text style={styles.actionSubtitle}>This does nothing</Text>
@@ -118,7 +118,7 @@ const MainPage = () => {
 
         {/* Legal Section */}
         <TouchableOpacity style={styles.legalButton} onPress={() => router.push('/eulaScreen')}>
-          <AntDesign name="infocirlceo" size={14} color="#6B7280" />
+          <AntDesign name="infocirlceo" size={14} color="#FACC15" />
           <Text style={styles.legalText}>Terms of Service</Text>
         </TouchableOpacity>
       </View>
@@ -126,18 +126,18 @@ const MainPage = () => {
       {/* Navigation Bar */}
       <View style={styles.navBar}>
         <TouchableOpacity style={[styles.navButton, styles.activeNavButton]}>
-          <Ionicons name="home" size={22} color="#4F46E5" />
+          <Ionicons name="home" size={22} color="#FACC15" />
           <Text style={styles.activeNavText}>Home</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.navCenterButton} onPress={() => router.push('/gameScreen')}>
-          <LinearGradient colors={['#4F46E5', '#6366F1']} style={styles.navCenterButtonGradient}>
+          <LinearGradient colors={['#FACC15', '#FACC15']} style={styles.navCenterButtonGradient}>
             <Ionicons name="play" size={24} color="white" />
           </LinearGradient>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.navButton} onPress={() => router.push('/optionsScreen')}>
-          <Ionicons name="settings-outline" size={22} color="#6B7280" />
+          <Ionicons name="settings-outline" size={22} color="#FACC15" />
           <Text style={styles.navText}>Settings</Text>
         </TouchableOpacity>
       </View>

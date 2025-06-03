@@ -44,15 +44,15 @@ const [username, setUsername] = useState(user?.firstName || '');
         {/* Header Actions */}
         <SafeAreaView style={styles.headerActions}>
           <TouchableOpacity style={styles.iconButton} onPress={() => router.back()}>
-            <Ionicons name="chevron-back" size={24} color="#FFF" />
+            <Ionicons name="chevron-back" size={24} color="#FACC15" />
           </TouchableOpacity>
 
           <View style={styles.headerRightButtons}>
             <TouchableOpacity style={styles.iconButton}>
-              <Ionicons name="camera-outline" size={24} color="#FFF" />
+              <Ionicons name="camera-outline" size={24} color="#FACC15" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconButton}>
-              <Ionicons name="settings-outline" size={24} color="#FFF" />
+              <Ionicons name="settings-outline" size={24} color="#FACC15" />
             </TouchableOpacity>
           </View>
         </SafeAreaView>
@@ -71,7 +71,7 @@ const [username, setUsername] = useState(user?.firstName || '');
             />
             <TouchableOpacity style={styles.editAvatarButton}>
               <LinearGradient colors={['#4F46E5', '#6366F1']} style={styles.editAvatarGradient}>
-                <Ionicons name="camera" size={14} color="#FFF" />
+                <Ionicons name="camera" size={14} color="#FACC15" />
               </LinearGradient>
             </TouchableOpacity>
           </View>
@@ -89,13 +89,13 @@ const [username, setUsername] = useState(user?.firstName || '');
                 <Text style={styles.username}>{username}</Text>
               )}
               <TouchableOpacity style={styles.editUsernameButton} onPress={handleEditClick}>
-                <Ionicons name="pencil" size={16} color="#4F46E5" />
+                <Ionicons name="pencil" size={16} color="#FACC15" />
               </TouchableOpacity>
             </View>
 
             <View style={styles.levelContainer}>
               <LinearGradient
-                colors={['#4F46E5', '#6366F1']}
+                colors={['#FACC15', '#FACC15']}
                 style={styles.levelBadge}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}>
@@ -108,24 +108,24 @@ const [username, setUsername] = useState(user?.firstName || '');
         {/* Stats Cards */}
         <View style={styles.statsContainer}>
           <View style={styles.statCard}>
-            <View style={[styles.statIconContainer, { backgroundColor: '#EEF2FF' }]}>
-              <Ionicons name="flag" size={20} color="#4F46E5" />
+            <View style={[styles.statIconContainer, { backgroundColor: '#FACC215' }]}>
+              <Ionicons name="flag" size={20} color="#FACC15" />
             </View>
             <Text style={styles.statLabel}>Country</Text>
             <Text style={styles.statValue}>🇱🇹</Text>
           </View>
 
           <View style={styles.statCard}>
-            <View style={[styles.statIconContainer, { backgroundColor: '#FEF3C7' }]}>
-              <MaterialCommunityIcons name="star-four-points" size={20} color="#D97706" />
+            <View style={[styles.statIconContainer, { backgroundColor: '#FA2CC15' }]}>
+              <MaterialCommunityIcons name="star-four-points" size={20} color="#FACC15" />
             </View>
             <Text style={styles.statLabel}>XP Points</Text>
             <Text style={styles.statValue}>1,250</Text>
           </View>
 
           <View style={styles.statCard}>
-            <View style={[styles.statIconContainer, { backgroundColor: '#FFEDD5' }]}>
-              <MaterialCommunityIcons name="fire" size={20} color="#EA580C" />
+            <View style={[styles.statIconContainer, { backgroundColor: '#FA2CC15' }]}>
+              <MaterialCommunityIcons name="fire" size={20} color="#FACC15" />
             </View>
             <Text style={styles.statLabel}>Day Streak</Text>
             <Text style={styles.statValue}>7 days</Text>
@@ -137,7 +137,7 @@ const [username, setUsername] = useState(user?.firstName || '');
           <Text style={styles.sectionTitle}>Recent Achievements</Text>
 
           <View style={styles.achievementCard}>
-            <LinearGradient colors={['#4F46E5', '#6366F1']} style={styles.achievementIcon}>
+            <LinearGradient colors={['#4F46E5', '#FACC15']} style={styles.achievementIcon}>
               <MaterialCommunityIcons name="trophy" size={24} color="#FFF" />
             </LinearGradient>
             <View style={styles.achievementInfo}>
@@ -148,8 +148,8 @@ const [username, setUsername] = useState(user?.firstName || '');
           </View>
 
           <View style={styles.achievementCard}>
-            <LinearGradient colors={['#D97706', '#F59E0B']} style={styles.achievementIcon}>
-              <MaterialCommunityIcons name="lightning-bolt" size={24} color="#FFF" />
+            <LinearGradient colors={['#D97706', '#FACC15']} style={styles.achievementIcon}>
+              <MaterialCommunityIcons name="lightning-bolt" size={24} color="#FACC15" />
             </LinearGradient>
             <View style={styles.achievementInfo}>
               <Text style={styles.achievementTitle}>Perfect Score</Text>
@@ -163,7 +163,7 @@ const [username, setUsername] = useState(user?.firstName || '');
         <View style={styles.actionButtons}>
           <TouchableOpacity style={styles.mainActionButton}>
             <LinearGradient
-              colors={['#4F46E5', '#6366F1']}
+              colors={['#4F46E5', '#FACC15']}
               style={styles.buttonGradient}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}>
@@ -184,7 +184,7 @@ const [username, setUsername] = useState(user?.firstName || '');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: '#FACC15',
   },
   headerContainer: {
     height: 220,
